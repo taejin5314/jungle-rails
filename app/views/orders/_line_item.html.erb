@@ -1,0 +1,26 @@
+<tr>
+  <td>
+    <h2>
+      <%= line_item.product.name %>
+    </h2>
+  </td>
+
+  <td>
+    <img src=<%= line_item.product.image %> />
+  </td>
+
+  <td>
+    <p>
+      <%= line_item.product.description %>
+    </p>
+  </td>
+
+  <td>
+    <p>quantity: <%= line_item.quantity %></p>
+    <p>item total: <%= humanized_money_with_symbol line_item.total_price %></p>
+  </td>
+
+  <td>
+    <p><%= @order.email %></p>
+  </td>
+</tr>
