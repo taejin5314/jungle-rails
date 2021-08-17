@@ -1,12 +1,10 @@
 <tr>
   <td>
-    <h2>
-      <%= line_item.product.name %>
-    </h2>
+    <%= line_item.product.name %>
   </td>
 
   <td>
-    <img src=<%= line_item.product.image %> />
+    <img src=<%= line_item.product.image.tiny %> />
   </td>
 
   <td>
@@ -16,11 +14,10 @@
   </td>
 
   <td>
-    <p>quantity: <%= line_item.quantity %></p>
-    <p>item total: <%= humanized_money_with_symbol line_item.total_price %></p>
+    <%= line_item.quantity %>
   </td>
-
+  
   <td>
-    <p><%= @order.email %></p>
+    <%= humanized_money_with_symbol line_item.total_price %>
   </td>
 </tr>
