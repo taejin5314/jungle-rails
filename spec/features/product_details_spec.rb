@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 # feature block => describe block
-RSpec.feature "Visitor navigates to home page", type: :feature, js: true do
+RSpec.feature "Visitor navigates to product page by clicking the product", type: :feature, js: true do
 
   # SETUP
   before :each do
@@ -19,15 +19,19 @@ RSpec.feature "Visitor navigates to home page", type: :feature, js: true do
   end
 
   #scenario block => it block
-  scenario "They see all products" do
+  scenario "They see a product image and details" do
     # ACT
     visit root_path
+    first('.product').click_on "Details"
 
     # DEBUG
+    # sleep(5)
+    # puts page.html
     # save_screenshot
 
     # VERIFY
-    expect(page).to have_css 'article.product', count: 10
+    expect(page).to have_css 'article.product-detail'
+    expect(page).to have_css 'section.products-show'
   end
 
 end
