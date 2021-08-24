@@ -25,9 +25,9 @@ RSpec.feature "Visitor add a product to cart", type: :feature, js: true do
     first('.product').click_on "Add"
 
     # DEBUG
-    sleep(5)
-    puts page.html
-    save_screenshot
+    # sleep(5)
+    # puts page.html
+    # save_screenshot
 
     # VERIFY
     expect(page).to have_content 'My Cart (1)'
