@@ -41,3 +41,25 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Capybara
 - Poltergeist
 - Database cleaner
+
+## Screenshots
+
+### Main Page
+
+![main page](https://github.com/taejin5314/jungle-rails/blob/master/docs/Main.png)
+
+### Logged in nav bar
+
+![login nav](https://github.com/taejin5314/jungle-rails/blob/master/docs/login-navbar.png)
+
+### Admin Page
+
+![admin page](https://github.com/taejin5314/jungle-rails/blob/master/docs/admin-page.png)
+
+### Cart Page
+
+![cart page](https://github.com/taejin5314/jungle-rails/blob/master/docs/cart.png)
+
+### Cart Checkout
+
+![cart checkout](https://github.com/taejin5314/jungle-rails/blob/master/docs/cart-checkout.png)
